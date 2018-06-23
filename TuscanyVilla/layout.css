@@ -4,12 +4,31 @@
 
 .container {
     display: grid;
-    grid-template-columns: 25px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 25px;
-    grid-template-rows: 40px 350px 100px 50px 250px 25px 25px 250px 25px 25px 250px 25px 25px 100px 25px 394px 394px 394px 25px 100px 25px 100px 25px 100px 25px 150px 25px 200px;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 40px 350px 125px 50px 250px 50px 50px 250px 50px 50px 250px 25px 25px 125px 50px 394px 394px 394px 50px 125px 25px 125px 25px 125px 25px 150px 25px 200px;
     width: 100%;
     font-family: 'Noto Sans', sans-serif;
     color: white;
 }
+
+.button {
+    background-color: #474E5D; /* Grey button */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 4px 2px;
+}
+
+.button2 {
+    background-color: white; /* White button */
+    color: #474E5D;
+}
+ 
 
 .logo {
     display: flex;
@@ -36,17 +55,17 @@
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 100;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 100;   
 }
 
 h3 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 100;
 }
 
@@ -58,6 +77,7 @@ h4 {
 h5 {
     font-size: 12px;
     font-weight: 100;
+    margin-bottom: 10px
 }
 
 ul {
@@ -114,7 +134,7 @@ li a {
         display: flex;
         justify-content: center;
         align-content: center;
-        padding-top: 25px;
+        padding-top: 35px;
         margin: 0;
 
     }
@@ -139,6 +159,7 @@ li a {
     background-color: white;
     grid-row: 5;
     grid-column: 2 / span 6;
+    margin-right: 25px;
 }
 
     .locationOne h3 {
@@ -156,7 +177,6 @@ li a {
     background-size: cover;
     grid-row: 5;
     grid-column: 8 / span 3;
-    margin-left: 17px;
 }
 
 .locationSectionTwo {
@@ -168,6 +188,16 @@ li a {
 .locationTwo {
     grid-row: 8;
     grid-column: 5 / span 6;
+    margin-left: 25px;
+}
+
+.locationTwo h3 {
+    color: white;
+}
+
+.locationTwo h5 {
+    color: white;
+    margin-top: -5px;
 }
 
 .locationTwoPhoto {
@@ -180,24 +210,51 @@ li a {
 .locationSectionThree {
     grid-row: 10 / span 3;
     grid-column: 1 / span 11;
+    background-color: white;
 }
 
 .locationThree {
-    background-color: palegreen;
+    background-color: white;
     grid-row: 11;
     grid-column: 2 / span 6;
+    margin-right: 25px;
+}
+
+.locationThree h3 {
+    color: #474E5D;
+}
+
+.locationThree h5 {
+    color: #474E5D;
+    margin-top: -5px;
 }
 
 .locationThreePhoto {
-    background-color: firebrick;
+    background-image: url('images/tuscany-grape-field-nature-51947.jpeg');
+    background-size: cover;
     grid-row: 11;
     grid-column: 8 / span 3;
 }
 
 .amenities {
-    background-color: tomato;
+    background-color: #474E5D;
     grid-row: 14;
     grid-column: 1 / span 11;
+}
+
+.amenities h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 35px;
+    margin: 0;
+}
+
+.amenities h4 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
 }
 
 .checkerBoard1 {
