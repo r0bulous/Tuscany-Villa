@@ -5,7 +5,7 @@
 .container {
     display: grid;
     grid-template-columns: 25px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 25px;
-    grid-template-rows: 40px 350px 100px 50px 250px 25px 25px 200px 25px 25px 200px 25px 25px 100px 25px 394px 394px 394px 25px 100px 25px 100px 25px 100px 25px 150px 25px 200px;
+    grid-template-rows: 40px 350px 100px 50px 250px 25px 25px 250px 25px 25px 250px 25px 25px 100px 25px 394px 394px 394px 25px 100px 25px 100px 25px 100px 25px 150px 25px 200px;
     width: 100%;
     font-family: 'Noto Sans', sans-serif;
     color: white;
@@ -160,129 +160,128 @@ li a {
 }
 
 .locationSectionTwo {
-    background-color: blueviolet;
+    background-color: #474E5D;
     grid-row: 7 / span 3;
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 11;
 }
 
 .locationTwo {
-    background-color: gray;
     grid-row: 8;
-    grid-column: 5 / span 4;
+    grid-column: 5 / span 6;
 }
 
 .locationTwoPhoto {
-    background-color: yellow;
+    background-image: url('images/modern-villa.jpeg');
+    background-size: cover;
     grid-row: 8;
     grid-column: 2 / span 3;
 }
 
 .locationSectionThree {
-    background-color: aqua;
     grid-row: 10 / span 3;
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 11;
 }
 
 .locationThree {
     background-color: palegreen;
     grid-row: 11;
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 6;
 }
 
 .locationThreePhoto {
     background-color: firebrick;
     grid-row: 11;
-    grid-column: 6 / span 3;
+    grid-column: 8 / span 3;
 }
 
 .amenities {
     background-color: tomato;
     grid-row: 14;
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 11;
 }
 
 .checkerBoard1 {
     background-color: teal;
     grid-row: 16;
-    grid-column: 4;
+    grid-column: 2 / span 3;
 }
 
 .checkerBoard2 {
     background-color: forestgreen;
     grid-row: 16;
-    grid-column: 5;
+    grid-column: 5 / span 3;
 }
 
 .checkerBoard3 {
     background-color: burlywood;
     grid-row: 16;
-    grid-column: 6;
+    grid-column: 8 / span 3;
 }
 
 .checkerBoard4 {
     background-color: brown;
     grid-row: 17;
-    grid-column: 4;
+    grid-column: 2 / span 3;
 }
 
 .checkerBoard5 {
     background-color: springgreen;
     grid-row: 17;
-    grid-column: 5;
+    grid-column: 5 / span 3;
 }
 
 .checkerBoard6 {
     background-color: darkgoldenrod;
     grid-row: 17;
-    grid-column: 6;
+    grid-column: 8 / span 3;
 }
 
 .checkerBoard7 {
     background-color: lightcoral;
     grid-row: 18;
-    grid-column: 4;
+    grid-column: 2 / span 3;
 }
 
 .checkerBoard8 {
     background-color: darkmagenta;
     grid-row: 18;
-    grid-column: 5;
+    grid-column: 5 / span 3;
 }
 
 .checkerBoard9 {
     background-color: chartreuse;
     grid-row: 18;
-    grid-column: 6;
+    grid-column: 8 / span 3;
 }
 
 .reviews {
     background-color: forestgreen;
     grid-row: 20;
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 11;
 }
 
 .caurosel {
     background-color: deepskyblue;
     grid-row: 22;
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 11;
 }
 
 .contact {
     background-color: pink;
     grid-row: 24;
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 11;
 }
 
 .contactForm {
     background-color: peru;
     grid-row: 26;
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 11;
 }
 
 .footer {
     background-color: cornflowerblue;
     grid-row: 28;
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 11;
 }
 
 
