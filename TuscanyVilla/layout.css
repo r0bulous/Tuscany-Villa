@@ -5,7 +5,7 @@
 .container {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;
-    grid-template-rows: 40px 350px 150px 50px 325px 50px 50px 325px 50px 50px 325px 25px 25px 150px 50px 394px 394px 394px 50px 150px 25px 125px 25px 125px 25px 150px 25px 200px;
+    grid-template-rows: 50px 350px 150px 50px 325px 50px 50px 325px 50px 50px 325px 25px 25px 150px 50px 394px 394px 394px 50px 150px 25px 200px 25px 150px 50px 225px 50px 225px;
     width: 100%;
     font-family: 'Noto Sans', sans-serif;
     color: white;
@@ -35,7 +35,7 @@
     opacity: 50;
     font-size: 25px;
 }
- 
+
 
 .logo {
     display: flex;
@@ -43,8 +43,9 @@
     grid-row: 1;
     grid-column: 1 / span 6;
     padding-left: 25px;
-    padding-top: 8px;
-    font-size: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .nav {
@@ -56,7 +57,7 @@
 .menuItems {
     float: right;
     display: flex;
-    font-size: 10px;
+    font-size: 14px;
     flex-direction: row;
     justify-content: flex-end;
 }
@@ -98,18 +99,15 @@ p {
 
 ul {
     list-style-type: none;
-    padding: 0;
-    width: 60px;
     color: white;
 }
 
 li a {
-    display: inline;
     display: block;
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
-    padding-left: 1em;
+    margin: 1px 1rem;
+    padding-left: 2em;
 }
 
 
@@ -290,7 +288,7 @@ li a {
         text-align: center;
         padding: 17px;
         margin-top: 145px;
-        margin-left: 116px;
+        margin-left: 104px;
     }
 
 .checkerBoard2 {
@@ -320,7 +318,7 @@ li a {
         text-align: center;
         padding: 25px;
         margin-top: 130px;
-        margin-left: 111px;
+        margin-left: 104px;
     }
 
 .checkerBoard4 {
@@ -345,11 +343,11 @@ li a {
 
     .checkerBoard5 h2 {
         background-color: rgba(100, 100, 100, .8);
-        width: 35%;
+        width: 40%;
         text-align: center;
         padding: 25px;
         margin-top: 130px;
-        margin-left: 111px;
+        margin-left: 104px;
     }
 
 .checkerBoard6 {
@@ -374,11 +372,11 @@ li a {
 
     .checkerBoard7 h2 {
         background-color: rgba(100, 100, 100, .8);
-        width: 35%;
+        width: 40%;
         text-align: center;
         padding: 25px;
         margin-top: 130px;
-        margin-left: 111px;
+        margin-left: 104px;
     }
 
 .checkerBoard8 {
@@ -407,7 +405,7 @@ li a {
         text-align: center;
         padding: 25px;
         margin-top: 130px;
-        margin-left: 111px;
+        margin-left: 104px;
     }
 
 .reviews {
@@ -431,28 +429,245 @@ li a {
         margin: 0;
     }
 
-.caurosel {
-    background-color: deepskyblue;
+/*.caurosel {
+    background-color: white;
     grid-row: 22;
     grid-column: 1 / span 11;
+}*/
+
+
+.carousel-wrapper {
+    height: 200px;
+    position: relative;
+    grid-row: 22;
+    grid-column: 1 / span 11;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: absolute;
+    text-align: center;
+    color: #474E5D;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+    .carousel-item h4 {
+        font-style: italic;
+        font-size: 20px;
+        padding-top: 18px;
+        margin-bottom: -25px;
+    }
+
+    .carousel-item h5 {
+        font-size: 20px;
+     }
+
+.carousel-item p {
+    color: #474E5D;
+    font-size: 14px;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("images/arrow.png") 50% 50% / 32px no-repeat;
+}
+
+.arrow-prev {
+    left: 0;
+}
+
+.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background-image: url('images/caro1.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.item-2 {
+    background-image: url('images/caro2.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.item-3 {
+    background-image: url('images/caro3.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
 }
 
 .contact {
-    background-color: pink;
+    background-color: #474E5D;
     grid-row: 24;
     grid-column: 1 / span 11;
 }
 
-.contactForm {
-    background-color: peru;
+    .contact h2 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-top: 47px;
+        margin: 0;
+    }
+
+    .contact h4 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+    }
+
+.contactInfo {
+    background-color: white;
     grid-row: 26;
-    grid-column: 1 / span 11;
+    grid-column: 2 / span 4;
 }
+
+    .contactInfo p {
+        color: #474E5D;
+        font-size: 14px;
+    }
+
+    .contactInfo ul {
+        color: #474E5D;
+        width: 90%;
+        font-size: 14px;
+        margin-left: 11px;
+    }
+
+    .contactInfo li {
+    margin: 10px;
+    }
+
+
+.contactForm {
+    background-color: white;
+    grid-row: 26;
+    grid-column: 6 / span 5;
+}
+
+    .contactForm form {
+        width: 99%;
+        padding-left: 10px;
+    }
+
+input[type=text], select {
+    padding: 12px 0px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+input[type=text], #comment {
+    width: 98%;
+    height: 75px;
+}
+
+input[type=text], #name {
+    width: 47%;
+    height: 20px;
+    padding-left: 8px;
+    margin-right: 13px;
+}
+
+input[type=text], #email {
+    width: 48%;
+    height: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=submit] {
+    width: 75px;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    background-color: #474E5D;
+    border: none;
+    margin: 28px;
+    color: white;
+    padding: 10px 15px;
+    float: right;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+
+
 
 .footer {
-    background-color: cornflowerblue;
+    background-color: #474E5D;
     grid-row: 28;
     grid-column: 1 / span 11;
+
 }
 
+    .footer h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding-top: 25px;
+    }
+
+    .footer p {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+    }
 

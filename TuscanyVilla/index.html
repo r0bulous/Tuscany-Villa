@@ -5,6 +5,12 @@
     <title>Tuscany Villa</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link href="layout.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">-->
 </head>
     <body>
         <div class="container">
@@ -101,12 +107,67 @@
                 <h2>REVIEWS</h2>
                 <h4>What our customers say</h4>
             </div>
-            <div class="caurosel"></div>
-            <div class="contact"></div>
-            <div class="contactForm"></div>
-            <div class="footer"></div>
 
+            <!--<div class="caurosel">-->
+            <div class="carousel-wrapper">
+
+                <span id="item-1"></span>
+                <span id="item-2"></span>
+                <span id="item-3"></span>
+                <div class="carousel-item item-1">
+                    <h4>"I love it! I love it! I love it!"</h4>
+                    <h5>Stella, Avid Napper</h5>
+                        <a class="arrow arrow-prev" href="#item-3"></a>
+                        <a class="arrow arrow-next" href="#item-2"></a>
+                </div>
+                <div class="carousel-item item-2">
+                    <h4>"It's the best! The best! The best!"</h4>
+                    <h5>Roger, Happy Customer</h5>
+                    <a class="arrow arrow-prev" href="#item-1"></a>
+                    <a class="arrow arrow-next" href="#item-3"></a>
+                </div>
+                <div class="carousel-item item-3">
+                    <h4>"Woohoo! I've never been so happy."</h4>
+                    <h5>Tina, Avid Customer</h5>
+                    <a class="arrow arrow-prev" href="#item-2"></a>
+                    <a class="arrow arrow-next" href="#item-1"></a>
+                </div>
+                <!--</div>-->
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <h4>We've got the answers</h4>
+            </div>
+            <div class="contactInfo">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-map-marker-alt"></i>Cleveland, OH</li>
+                    <li><i class="fa-li fa fa-mobile-alt"></i>555-555-1212</li>
+                    <li><i class="fa-li fa fa-envelope"></i>name@email.com</li>
+                </ul>
+
+
+
+
+            </div>
+            <div class="contactForm">
+                <form action="/action_page.php">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <br />
+                    <input type="text" id="comment" name="comment" placeholder="Comment">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="footer">
+                <h3><i class="fa fa-angle-up"></i></h3>
+
+                <p>Created by: Student Name</p>
+                <p>Not at all copyrighted</p>
+            </div>
         </div>
 
-    </body>
+
+</body>
 </html>
