@@ -22,11 +22,21 @@
     font-size: 14px;
     font-family: 'Noto Sans', sans-serif;
     margin: 4px 2px;
+    
 }
 
+.button:hover {
+    background-color: blue;
+}
+
+
 .button2 {
-    background-color: white; /* White button */
+    background-color: white; /* Grey button */
     color: #474E5D;
+}
+
+.button2:hover {
+    background-color: lightblue;
 }
 
 .button3 {
@@ -35,6 +45,8 @@
     opacity: 50;
     font-size: 25px;
 }
+
+
 
 
 .logo {
@@ -429,11 +441,7 @@ li a {
         margin: 0;
     }
 
-/*.caurosel {
-    background-color: white;
-    grid-row: 22;
-    grid-column: 1 / span 11;
-}*/
+/*.caurosel */
 
 
 .carousel-wrapper {
@@ -628,11 +636,11 @@ input[type=text], #email {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: darkblue;
 }
 
 input[type=submit] {
-    width: 75px;
+    width: 75px; 
     background-color: blue;
     color: white;
     padding: 14px 20px;
